@@ -100,3 +100,10 @@ def mode_format():
     _, exitcode, _ = run_coala(
             print_results=print_results_formatted)
     return exitcode
+
+def mode_profile(console_printer, log_printer):
+    from coalib.coala_main import run_coala
+    import logging
+    logging.info('Profile mode is not yet Implemented')
+    exitcode = 10
+    return exitcode

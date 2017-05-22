@@ -102,6 +102,10 @@ To run coala without user interaction, run the `coala --non-interactive`,
              'severity, severity_str, message, message_base, '
              'message_arguments, affected_code, source_lines')
 
+    mode_group.add_argument(
+        '-P', '--profile-bears', const=True, action='store_const',
+        help='profile bears')
+
     config_group = arg_parser.add_argument_group('Configuration')
 
     config_group.add_argument(
