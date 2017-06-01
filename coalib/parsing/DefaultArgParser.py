@@ -237,6 +237,11 @@ To run coala without user interaction, run the `coala --non-interactive`,
              'on unexpected internal exceptions '
              '(implies --verbose)')
 
+    misc_group.add_argument(
+        '--profile', nargs=1, metavar='PROFILE',
+        help='run coala-bears in profile mode and store'
+             'profiling results to a file specified')
+
     try:
         # Auto completion should be optional, because of somewhat complicated
         # setup.
